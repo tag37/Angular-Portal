@@ -1,0 +1,30 @@
+<div class="row" >
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="card">
+                <div class="header">
+                    <h2>Login</h2>                   
+                </div>
+                <div class="body">
+                    <form #ngForm="ngForm" (ngSubmit)="onSubmit()">
+                        <label for="email_address">Email Address</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" id="email_address"  [(ngModel)]="login.UserName" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Enter your email address">
+                            </div>
+                        </div>
+                        <label for="password">Password</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="password" id="password" [(ngModel)]="login.Password" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Enter your password">
+                            </div>
+                        </div>
+
+                        <input type="checkbox" id="remember_me" class="filled-in">
+                        <label for="remember_me">Remember Me</label>
+                        <br>
+                        <button type="submit" class="btn btn-primary m-t-15 waves-effect">LOGIN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
